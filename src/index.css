@@ -27,3 +27,14 @@
   font-family: Arial, sans-serif;
   color: hsl(0, 0%, 20%);
 }
+
+/* student component styles */
+.student {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid hsla(0, 0%, 50%, 0.8);
+}
+.student p {
+  margin: 2;
+}

@@ -6,6 +6,11 @@ function Todo() {
 
   let index = 0;
 
+  function handleDelete(index) {
+    const updatedList = items.filter((_, i) => i !== index);
+    setItem(updatedList);
+  }
+
   return (
     <div>
       <h3>The lists</h3>
@@ -18,14 +23,18 @@ function Todo() {
       <button
         onClick={() => {
           setItem([...items, { id: index++, name: name }]);
+          setName("");
         }}
       >
         Add
       </button>
 
       <ul>
-        {items.map((item) => (
-          <li key={item.id}>{item.name} </li>
+        {items.map((item, index) => (
+          <li key={item.id}>
+            {item.name}
+            <button onClick={() => handleDelete(index)}>Delete</button>
+          </li>
         ))}
       </ul>
     </div>

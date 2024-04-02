@@ -40,7 +40,7 @@ function Fetch() {
       <button onClick={() => fetchData()}>Fetch data</button>
 
       {data &&
-        data.map((post) => (
+        data.slice(0, 10).map((post) => (
           <div key={post.id}>
             <h5>
               {post.id}: {post.title}

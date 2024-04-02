@@ -32,6 +32,7 @@ function Fetch() {
 
   return (
     <div>
+      <hr />
       <h3>A simple data fetching</h3>
 
       {loading && <p>Loading...</p>}

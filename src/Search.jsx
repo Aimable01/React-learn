@@ -4,7 +4,7 @@ function Search() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
 
-  const data = ["apple", "banana", "cherry", "date", "elderberry"];
+  const data = ["apple is good", "banana", "cherry", "date", "elderberry"];
 
   const handleChange = (e) => {
     const input = e.target.value;

@@ -41,7 +41,9 @@ function Fetch() {
       {data &&
         data.map((post) => (
           <div key={post.id}>
-            <h5>{post.title}</h5>
+            <h5>
+              {post.id}: {post.title}
+            </h5>
             <p>{post.body}</p>
           </div>
         ))}

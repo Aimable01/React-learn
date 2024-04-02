@@ -26,6 +26,8 @@ function Search() {
 
   return (
     <div>
+      <hr />
+      <h3>Search bar</h3>
       Input: <input type="text" value={query} onChange={handleChange} />
       <ul>
         {results.map((result, index) => (

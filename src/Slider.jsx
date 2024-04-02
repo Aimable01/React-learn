@@ -20,6 +20,7 @@ function Slider() {
   }
   return (
     <div>
+      <hr />
       <h4>Image slider</h4>
       <img className="images" src={src} alt="" />
       <p>Current image is: image{index + 1}</p>

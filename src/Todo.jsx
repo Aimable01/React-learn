@@ -13,6 +13,7 @@ function Todo() {
 
   return (
     <div>
+      <hr />
       <h3>The lists</h3>
       <input
         type="text"

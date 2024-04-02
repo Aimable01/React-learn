@@ -60,6 +60,7 @@ function WeatherApp() {
       )}
 
       {error && <p>{error.message}</p>}
+      {error && setError(null)}
     </div>
   );
 }

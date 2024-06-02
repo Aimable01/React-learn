@@ -6,11 +6,7 @@ export default function Form() {
     handleSubmit,
     setError,
     formState: { errors, isSubmitting },
-  } = useForm({
-    defaultValues: {
-      email: "name1@gmail.com",
-    },
-  });
+  } = useForm();
 
   const onSubmit = async (data) => {
     try {
